@@ -23,7 +23,7 @@
       dd,dt { float: left; font-size:14px; font-size:3vw; }
       dd { margin-left: 3%; }
       dt { text-align: right; width: 35%; clear:both; }
-      img { width:100%; max-width:475px; }
+      img { width:100%; max-width:475px; display: block; margin-left: auto; margin-right: auto; }
     </style>
     <script>
       function decode() {
@@ -714,8 +714,8 @@
     </script>
   </head>
   <body>
-    <img src="/serial.png">
     <div id="container">
+      <img src="/serial.png">
       <hr />
       <div id="serialwrapper">
         <div id="serial"><label>PPP</label><input onkeydown="if (event.keyCode == 13) { document.getElementById('cccc').focus(); }" style="text-transform:uppercase;width:2em;vertical-align:baseline;" maxlength="2" type="text" id="yw" value="" placeholder="YW">SSS<input onkeydown="if (event.keyCode == 13) { document.getElementById('cccc').blur(); decode(); }" style="text-transform:uppercase;width:3em;vertical-align:baseline;" maxlength="4" type="text" id="cccc" value="" placeholder="CCCC"></div>
