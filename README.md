@@ -1,11 +1,9 @@
 # fecaleagle.github.io
+# serial check
 
 Provides an easy way to obtain the potential iOS version of a boxed device, using only the fourth and fifth digits of the serial number.  No app to download, caching enabled (no internet connection required after first access), no frills or external libraries.
 
----
-
 # license
-
 
             DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
                     Version 2, December 2004
@@ -19,4 +17,4 @@ Provides an easy way to obtain the potential iOS version of a boxed device, usin
             DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
    TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 
-0. You just DO WHAT THE FUCK YOU WANT TO.
+ 0. You just DO WHAT THE FUCK YOU WANT TO.
