@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Cache Manifest Version: 1.0
+# Cache Manifest Version: 1.1
 
 # Core files.
 
