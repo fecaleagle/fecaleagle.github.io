@@ -9,3 +9,6 @@ CACHE MANIFEST
 # Images that get viewed.
 ./serial.png
 ./favicon.ico
+
+NETWORK:
+*
