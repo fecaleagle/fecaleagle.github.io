@@ -741,7 +741,7 @@
               }
               
               if ( versionIndex >= versionKeys.length - 2 ) {
-                document.getElementById('warn').style.display = 'block';
+                document.getElementById('warn').style.display = 'inline-block';
               } else {
                 document.getElementById('warn').style.display = 'none';
               }
@@ -795,8 +795,6 @@
       <i>Notes: Week of Manufacture is identified for any device manufactured with a post-2010 format serial number.</i>
       <br /><br />
       <i>Model Number (CCCC) is optional for devices manufactured prior to 2020.</i>
-      <br /><br />
-      <i>Model identification and probable iOS version to be further refined.</i>
       <hr />
       <dl id="list" style="display:none">
         <dt>Model:</dt>
@@ -816,7 +814,7 @@
         <dt>Next Version:</dt>
         <dd id="next"></dd>
       </dl>
-      <div id="warn" style="display:none;"><strong><i>Warning: </i></strong>The probably iOS version is the last iOS version known to this tool.  Please check the manufacture date against the latest iOS version released to ensure that the tool is updated.</div> 
+      <div id="warn" style="display:none;"><br /><strong>Warning:</strong> The probable iOS version is the last iOS version known to this tool.  Please check the manufacture date against the latest iOS version released to ensure that the tool is updated.</div> 
     </div>
     <div id="footer">Copyright © 2017 fecaleagle - <a href="https://github.com/fecaleagle/fecaleagle.github.io" target="_blank">View the source.</a></div>
   </body>
