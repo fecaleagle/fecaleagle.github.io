@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Cache Manifest Version: 11.2.6
+# Cache Manifest Version: 11.2.6 + date fix
 
 # Core files.
 
