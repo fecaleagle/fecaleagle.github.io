@@ -674,7 +674,8 @@
             
             if ( weekIndex != -1 ) {
               
-              week = half * 27 + weekIndex;
+              // if first half, start at 1.
+              week = half * 27 + (half == 0 ? weekIndex + 1 : weekIndex);
               var dateRange = datesOfWeek(week, year);
               
               document.getElementById("week").innerHTML = week;
