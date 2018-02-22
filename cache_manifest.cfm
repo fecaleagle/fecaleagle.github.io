@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Cache Manifest Version: 11.2.6 + first model version
+# Cache Manifest Version: 11.2.6 + initial device iOS version
 
 # Core files.
 
