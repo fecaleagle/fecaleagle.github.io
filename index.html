@@ -51,6 +51,7 @@
         document.getElementById("list").style.display = "block";
         
         var model = "unspecified";
+        var firstDateForModel;
         
         if (lengthCCCC == 4) {
           
@@ -320,6 +321,7 @@
             case 'HYFK':
             case 'HYFL':
               model = 'iPhone 6';
+              firstDateForModel = "2014-09-17";
               break;
             case 'G5QF':
             case 'G5QG':
@@ -372,6 +374,7 @@
             case 'HFLV':
             case 'HFLW':
               model = 'iPhone 6s';
+              firstDateForModel = "2015-09-16";
               break;
             case 'GRWD':
             case 'GRWF':
@@ -406,6 +409,7 @@
             case 'HFM4':
             case 'HFM5':
               model = 'iPhone 6s Plus';
+              firstDateForModel = "2015-09-16";
               break;
             case 'H2XG':
             case 'H2XH':
@@ -440,6 +444,7 @@
             case 'HTW4':
             case 'HTW5':
               model = 'iPhone SE';
+              firstDateForModel = "2016-03-21";
               break;
             case 'HG6W':
             case 'HG6X':
@@ -506,6 +511,7 @@
             case 'J1D9':
             case 'J1DC':
               model = 'iPhone 7';
+              firstDateForModel = "2016-09-13";
               break;
             case 'HFXW':
             case 'HFXX':
@@ -572,6 +578,7 @@
             case 'J1DD':
             case 'J1DF':
               model = 'iPhone 7 Plus';
+              firstDateForModel = "2016-09-13";
               break;
             case 'JC67':
             case 'JC68':
@@ -592,6 +599,7 @@
             case 'JC6T':
             case 'JC6V':
               model = 'iPhone 8';
+              firstDateForModel = "2017-09-19";
               break;
             case 'JCLM':
             case 'JCLN':
@@ -612,6 +620,7 @@
             case 'JCM6':
             case 'JCM7':
               model = 'iPhone 8 Plus';
+              firstDateForModel = "2017-09-19";
               break;
             case 'JCL6':
             case 'JCL7':
@@ -626,6 +635,7 @@
             case 'JCLK':
             case 'JCLL':
               model = 'iPhone X';
+              firstDateForModel = "2017-09-19";
               break;
             default:
               model = 'unknown';
@@ -749,7 +759,13 @@
                 document.getElementById('warn').style.display = 'none';
               }
               
-              document.getElementById("previous").innerHTML = "iOS&nbsp;" + versions[versionKeys[versionIndex - 1]] + ", &nbsp;" + (versionKeys[versionIndex - 1] > "1999-01-01" ? versionKeys[versionIndex - 1].replace(/-/g,"/") : "The Past");
+              if ( firstDateForModel && firstDateForModel >= versionKeys[versionIndex] ) {
+                versionIndex = versionKeys.indexOf(firstDateModel);
+                document.getElementById("previous").innerHTML = "No Previous iOS Possible");
+              } else {
+                document.getElementById("previous").innerHTML = "iOS&nbsp;" + versions[versionKeys[versionIndex - 1]] + ", &nbsp;" + (versionKeys[versionIndex - 1] > "1999-01-01" ? versionKeys[versionIndex - 1].replace(/-/g,"/") : "The Past");
+              }
+              
               document.getElementById("probable").innerHTML = "iOS&nbsp;" + versions[versionKeys[versionIndex]] + ", &nbsp;" + versionKeys[versionIndex].replace(/-/g,"/");
               document.getElementById("next").innerHTML = "iOS&nbsp;" + versions[versionKeys[versionIndex + 1]] + ", &nbsp;" + (versionKeys[versionIndex + 1] < "2099-01-01" ? versionKeys[versionIndex + 1].replace(/-/g,"/") : "The Future");
               
