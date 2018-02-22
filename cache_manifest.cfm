@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Cache Manifest Version: 11.2.6 + initial device version
+# Cache Manifest Version: 11.2.6 + initial device version fixes
 
 # Core files.
 
