@@ -760,7 +760,7 @@
               }
               
               if ( firstDateForModel && firstDateForModel >= versionKeys[versionIndex] ) {
-                versionIndex = versionKeys.indexOf(firstDateModel);
+                versionIndex = versionKeys.indexOf(firstDateForModel);
                 document.getElementById("previous").innerHTML = "No Previous iOS Possible";
               } else {
                 document.getElementById("previous").innerHTML = "iOS&nbsp;" + versions[versionKeys[versionIndex - 1]] + ", &nbsp;" + (versionKeys[versionIndex - 1] > "1999-01-01" ? versionKeys[versionIndex - 1].replace(/-/g,"/") : "The Past");
