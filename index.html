@@ -812,6 +812,8 @@
               if ( firstDateForModel && firstDateForModel >= versionKeys[versionIndex] ) {
                 versionIndex = versionKeys.indexOf(firstDateForModel);
                 document.getElementById("previous").innerHTML = "Not possible for device";
+              } else if (!versions[versionKeys[versionIndex - 1]]){
+                document.getElementById("previous").innerHTML = "Unknown iOS&nbsp;"+", &nbsp;" + (versionKeys[versionIndex - 1] > "1999-01-01" ? versionKeys[versionIndex - 1].replace(/-/g,"/") : "The Past");
               } else {
                 document.getElementById("previous").innerHTML = "iOS&nbsp;" + versions[versionKeys[versionIndex - 1]] + ", &nbsp;" + (versionKeys[versionIndex - 1] > "1999-01-01" ? versionKeys[versionIndex - 1].replace(/-/g,"/") : "The Past");
               }
